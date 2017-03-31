@@ -1,14 +1,5 @@
 module ApplicationHelper
 
-  def login_helper style = ''
-    if user_signed_in?
-      link_to t('logout'), destroy_user_session_path(locale: I18n.locale), method: :delete , class: style
-    else
-      (link_to t('login'), new_user_session_path(locale: I18n.locale), class: style) + " ".html_safe +
-      (link_to t('register'), new_user_registration_path(locale: I18n.locale), class: style)
-    end
-  end
-
   def nav_items
     [
       {
@@ -19,6 +10,22 @@ module ApplicationHelper
       {
         url: about_path(params[:locale]),
         title: t('.about')
+      },
+      {
+        url: problem_path(params[:locale]),
+        title: t('.problem')
+      },
+      {
+        url: solution_path(params[:locale]),
+        title: t('.solution')
+      },
+      {
+        url: demo_path(params[:locale]),
+        title: t('.demo')
+      },
+      {
+        url: resources_path(params[:locale]),
+        title: t('.resources')
       },
 
     ]
