@@ -1,15 +1,34 @@
 <h1>Resources</h1>
 
-<h3>For Ruby on Rails!</h3>
-<ul>
-  <li>.</li>
-</ul>
+<div class="row">
+  <div class="col-lg-3 mt-3">
+    <%= image_tag("Icons/PNG/@2x/Clipboard@2x.png") %>
+  </div>
+  <div class="col-lg-9 mt-3">
+    <div class="card bg-faded my-3 p-3">
+      <h2>Ruby on Rails <%= fa_icon('diamond 2x', class:"text-danger")%></h2>
+      <ul>
+        <li><a href="http://guides.rubyonrails.org/rails_application_templates.html">RailsGuides - Templates</a></li>
+        <li><a href="http://guides.rubyonrails.org/generators.html">RailsGuides - Customizing Generators</a></li>
+        <li><a href="https://github.com/erikhuda/thor">Thor Gem <%= fa_icon('gavel') %></a></li>
+        <li><a href="https://github.com/samgrimm/super-rails-template">My rails template</a></li>
+      </ul>
 
-<h3>Other languages!? No problem</h3>
-<ul>
-  <li>The concept of the template is not unique to Rails.
-    For instance, with React, once you have a configuration that works for you,
-    you can always make that into your template, remove the folders that are unique to your application,
-    and push it to github for future use.
-  </li>
-</ul>
+    </div>
+
+    <div class="card bg-faded my-3 p-3">
+      <h2>Other languages!? No problem</h2>
+      <ul>
+        <li>The concept of the template is not unique to Rails.
+          For instance, with React, once you have a configuration that works for you,
+          you can always make that into your template, remove the folders that are unique to your application,
+          and push it to github for future use.
+        </li>
+        <li><a href="https://github.com/andrewjmead/react-course-boilerplate-app">Andrew Mead's React boilerplate</a></li>
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+<%= link_to 'Next', thankyou_path, class:"btn btn-primary" %>

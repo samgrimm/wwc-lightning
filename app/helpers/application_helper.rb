@@ -27,6 +27,10 @@ module ApplicationHelper
         url: resources_path(params[:locale]),
         title: t('.resources')
       },
+      {
+        url: thankyou_path(params[:locale]),
+        title: t('.thankyou')
+      }
 
     ]
   end

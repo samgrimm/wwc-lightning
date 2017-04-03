@@ -1,16 +1,80 @@
 <h1>About me</h1>
-<ul>
-  <li>I am a mechanical engineer from Brazil.</li>
-  <li>I worked in aerospace doing software certification for almost 10 years (but never coded more than a few excel macros).</li>
-  <li>Then I quit my job to get an MBA.</li>
-  <li>Then I worked in management consulting for a while.(yep, I am old!)</li>
-  <li>Then I got married, moved back to Austin and had a business idea.</li>
-  <li>A dev shop was going to charge me $90K to develop my idea.</li>
-  <li>I didn't have $90K, but I had time.</li>
-  <li>So I bought Michael Hartl's Ruby on Rails Tutorial, went to RailsGirls, and started to build my idea.</li>
-  <li>The idea fizzled away, I got a job (Thanks, Holly!), I got pregnant and decided to stay home for a while.</li>
-  <li>But I never stopped loving building apps... So I kept teaching myself, through online tutorials and A LOT of trial and error</li>
-  <li>Now I am here!</li>
-</ul>
+<div id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="card text-center">
+        <div class="card-img-top" role="tab" id="headingOne">
+          <h5 class="mb-0">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <%= image_tag("Icons/PNG/@2x/Spaceship@2x.png") %>
+            </a>
+          </h5>
+        </div>
+      </div>
+      <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+        <div class="card-block">
+          <li>I am a mechanical engineer from Brazil.</li>
+          <li>I worked in aerospace doing software certification for almost 10 years (but never coded more than a few excel macros).</li>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="card text-center">
+        <div class="card-img-top" role="tab" id="headingTwo">
+          <h5 class="mb-0">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <%= image_tag("Icons/PNG/@2x/shirt@2x.png") %>
+            </a>
+          </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="card-block">
+            <li>Then I quit my job to get an MBA.</li>
+            <li>Then I worked in management consulting for a while.(yep, I am old!)</li>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="card text-center">
+        <div class="card-img-top" role="tab" id="headingThree">
+          <h5 class="mb-0">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <%= image_tag("Icons/PNG/@2x/Bulb@2x.png") %>
+            </a>
+          </h5>
+        </div>
+        <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+          <div class="card-block">
+            <li>Then I got married, moved back to Austin and had a business idea.</li>
+            <li>A dev shop was going to charge me $90K to develop my idea.</li>
+            <li>I didn't have $90K, but I had time.</li>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 offset-lg-4 mt-3">
+      <div class="card text-center">
+        <div class="card-img-top" role="tab" id="headingFour">
+          <h5 class="mb-0">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              <%= image_tag("Icons/PNG/@2x/pc@2x.png") %>
+            </a>
+          </h5>
+        </div>
+        <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
+          <div class="card-block">
+            <li>So I bought Michael Hartl's Ruby on Rails Tutorial, went to RailsGirls, and started to build my idea.</li>
+            <li>The idea fizzled away, I got a job (Thanks, Holly!), I got pregnant and decided to stay home for a while.</li>
+            <li>But I never stopped loving building apps... So I kept teaching myself, through online tutorials and A LOT of trial and error</li>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
 
 <%= link_to 'Next', problem_path, class:"btn btn-primary" %>

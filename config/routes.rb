@@ -5,6 +5,7 @@ Rails.application.routes.draw do
     get 'solution', to: 'static_pages#solution'
     get 'demo', to: 'static_pages#demo'
     get 'resources', to: 'static_pages#resources'
+    get 'thankyou', to: 'static_pages#thankyou'
     root to: 'static_pages#home'
     get 'static_pages/home'
 

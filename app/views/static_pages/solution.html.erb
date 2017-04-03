@@ -1,16 +1,27 @@
 <h1>Solution</h1>
+<div class="row">
+  <div class="col-lg-3 mt-3">
+    <%= image_tag("Icons/PNG/@2x/user-interface@2x.png") %>
+  </div>
+  <div class="col-lg-9">
+    <div class="card bg-faded my-3 p-3">
+      <h2>TEMPLATES!</h2>
+      <ul>
+        <li><h3>What is a template?</h3>
+          A 'template' is a file that you can call when running 'rails new ', containing additional commands to be run while the app is getting created.</li>
+        <li><h3>What kind of commands?</h3>
+          Anything, really, from inserting lines of code into files, to adding gems to your gem file, to running commands on the terminal (like git init or heroku create).</li>
+        <li><h3>Is that it?</h3>
+        <p>Well, you can also have it copy files to your app folder, and run rails commands like: rails generate scaffold...</p>
+        <p>You can also have conditionals based on values you input on the terminal</p>
+        </li>
+        <li><h3>And it helps the absent-minded</h3>
+          I can have dotenv installed and the .env file created and added to .gitignore, so I WON'T FORGET AGAIN.</li>
+        <li><h3>And that is only scratching the surface</h3></li>
+      </ul>
 
-<h1>TEMPLATES!</h1>
-<ul>
-  <li><h3>What is a template?</h3>
-    A 'template' is a file that you can call when running 'rails new ', containing additional commands to be run while the app is getting created.</li>
-  <li><h3>What kind of commands?</h3>
-    Anything, really, from inserting lines of code into files, to adding gems to your gem file, to running commands on the terminal (like git init or heroku create).</li>
-  <li><h3>Is that it?</h3>
-    Well, you can also have it copy files to your app folder, and run rails commands like: rails generate scaffold....</li>
-  <li><h3>And it helps the absent-minded</h3>
-    I can have dotenv installed and the .env file created and added to .gitignore, so I WON'T FORGET AGAIN.</li>
-  <li><h3>And that is only scratching the surface</h3></li>
-</ul>
+    </div>
+  </div>
+</div>
 
 <%= link_to 'Next', demo_path, class:"btn btn-primary" %>
